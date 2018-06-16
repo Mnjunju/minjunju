@@ -1,0 +1,171 @@
+/*公共样式*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+ul{
+    list-style: none;
+}
+.clear-float::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+input{
+    outline: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+::-webkit-input-placeholder{
+    color: #000;
+}
+/*头部*/
+.wrap{
+    background-color: #eeeeee;
+}
+.header{
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.header .header-top{
+    width: 100%;
+    height: 1.35rem;
+}
+.header .header-top h1{
+    box-sizing: content-box;
+    width: 2.4rem;
+    height: 0.88rem;
+    background: url("img/logo.png") no-repeat 0.17rem 0.26rem;
+    text-indent: -9999px;
+    background-size: 2.4rem 0.88rem;
+    padding: 0.26rem 0.17rem 0.21rem;
+    float: left;
+}
+.header .header-top .active-menu{
+    display: block;
+    float: left;
+    width: 1.29rem;
+    height: 1.35rem;
+    background: url("img/menuBtn.png") no-repeat center 0.16rem;
+    background-size: 0.82rem 2.33rem;
+}
+.header .header-top .btns{
+    float: right;
+    padding-top: 0.21rem;
+}
+.header .header-top .btns a{
+    float: left;
+    width: 1.11rem;
+    height: 0.78rem;
+    background-color: #690;
+    color: #ccc;
+    margin-right: 0.15rem;
+    font-size: 0.42rem;
+    text-align: center;
+    line-height: 0.78rem;
+    border-radius: 0.08rem;
+}
+.header .header-top .btns a:nth-child(1){
+    width: 1.3rem;
+    height: 0.88rem;
+    color: #fff;
+    margin-right: 0.3rem;
+    margin-top: 0.03rem;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.88rem;
+}
+.header .search{
+    height: 1.03rem;
+    padding: 0.16rem;
+}
+.header .search input:nth-child(1){
+    box-sizing: border-box;
+    width: 8.29rem;
+    height: 1.03rem;
+    background-color: #999;
+    padding: 0.05rem 0.1rem;
+    border: 1px solid #5a5a5a;
+    font-size: 0.41rem;
+    color: #333;
+    border-top-left-radius: 0.15rem;
+    border-bottom-left-radius: 0.15rem;
+}
+.header .search input:nth-child(1):focus{
+    background-color: white;
+}
+.header .search input:nth-child(2){
+    width: 2.03rem;
+    height: 1.03rem;
+    border: none;
+    background-color: #414040;
+    color: #fff;
+    font-size: 0.41rem;
+    border-radius: 0.15rem;
+}
+.wrap .header .menu{
+    width: 100%;
+    position: absolute;
+    top: 1.35rem;
+    padding: 0.1rem 0;
+    border-top: 1px solid #6a6a6a;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.wrap .header .menu li a{
+    width: 25%;
+    height: 1.35rem;
+    line-height: 1.35rem;
+    font-size: 0.54rem;
+    text-align: center;
+    float: left;
+    color: white;
+}
+/*内容部分*/
+/*.content{*/
+    /*position: relative;*/
+    /*transform: translateY(0);*/
+    /*margin-top: 2.7rem;*/
+    /*height: 2000px;*/
+/*}*/
+.content .nav-wrap .nav{
+    box-sizing: border-box;
+    height: 1.77rem;
+    padding: 0.31rem 0 0.14rem;
+    white-space: nowrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+}
+.content .nav-wrap .nav li{
+    display:inline-block;
+    height: 1.29rem;
+    padding: 0 0.38rem;
+    font-size: 0.62rem;
+}
+.content .nav-wrap .nav li a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 1.29rem;
+    color: black;
+}
+.content .nav-wrap .nav li.active{
+    background-color: #690;
+}
+.content .nav-wrap .nav li.active a{
+    color: #fff;
+}
